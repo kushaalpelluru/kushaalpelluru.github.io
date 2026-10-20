@@ -565,20 +565,32 @@ svg {
   opacity: 0.1;
 }
 .portrait img {
-  position: absolute; inset: auto 0 0 0;
+  position: absolute; inset: 0;
   width: 100%; height: 100%;
-  object-fit: contain; object-position: bottom center;
-  filter: grayscale(0.42) contrast(1.05) brightness(1.03) saturate(0.95);
-  -webkit-mask-image: linear-gradient(180deg, #000 76%, rgba(0,0,0,0.6) 90%, transparent 100%);
-          mask-image: linear-gradient(180deg, #000 76%, rgba(0,0,0,0.6) 90%, transparent 100%);
+  object-fit: cover; object-position: 50% 30%;
+  /* pulled toward the palette: a touch desaturated, slightly warm */
+  filter: saturate(0.74) contrast(1.04) brightness(1.01) sepia(0.08);
 }
 /* warm wash so the photo reads as part of the palette, not a pasted-in cutout */
+/* ties the street colours to the page without washing the photo out */
 .portrait::after {
   content: "";
   position: absolute; inset: 0;
-  background: linear-gradient(165deg, color-mix(in srgb, var(--c-green) 30%, transparent), transparent 48%);
+  background:
+    linear-gradient(170deg, color-mix(in srgb, var(--c-green) 42%, transparent), transparent 55%),
+    linear-gradient(0deg, color-mix(in srgb, var(--c-ink) 34%, transparent), transparent 42%);
   mix-blend-mode: soft-light;
   pointer-events: none;
+}
+/* inner hairline so the photo sits in the layout like the project covers */
+.portrait::before {
+  content: "";
+  position: absolute; inset: 0;
+  width: auto; aspect-ratio: auto;
+  border: 0; outline: 0; border-radius: inherit;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.1);
+  opacity: 1;
+  z-index: 1;
 }
 .portrait figcaption {
   position: absolute; left: 20px; bottom: 16px;
