@@ -1,6 +1,6 @@
 /* =========================================================
-   PROJECTS — edit this list to add, remove, or reorder work.
-   logo:      file in assets/logos/ — flattened to one tone on the card, so
+   PROJECTS - edit this list to add, remove, or reorder work.
+   logo:      file in assets/logos/ - flattened to one tone on the card, so
               brand colours never clash with the palette.
    logoAlt:   company name (accessible label for the mark)
    chipText:  optional words beside the mark, e.g. "× UAE startup"
@@ -22,7 +22,7 @@ window.PROJECTS = [
     metricLabel: "observations · 410 games · 5 seasons",
     tags: ["Machine Learning", "Responsible AI", "Human-in-the-loop", "Python"],
     summary:
-      "An explainable pricing platform for live events that balances revenue with fan access — with a human approving every price change.",
+      "An explainable pricing platform for live events that balances revenue with fan access, with a human approving every price change.",
     context:
       "Dynamic pricing can maximize revenue, but left unchecked it prices fans out and erodes trust. The goal was a pricing tool a venue could actually defend.",
     did: [
@@ -54,8 +54,8 @@ window.PROJECTS = [
     context:
       "A two-stage competition: first fabricate a statistically believable set of financial records for a fictional Argentine winery, then build the tooling to detect fraud within it.",
     did: [
-      "Stage 1 — Designed a statistically realistic dataset across 5 relational tables.",
-      "Stage 2 — Built a Streamlit forensic analytics platform applying structural, chronological, and statistical tests.",
+      "Stage 1 - Designed a statistically realistic dataset across 5 relational tables.",
+      "Stage 2 - Built a Streamlit forensic analytics platform applying structural, chronological, and statistical tests.",
     ],
     outcome:
       "Flagged 45.2% of invoices for pre-hire employee violations and $2.86M in pre-release wine sales as operationally impossible. Won the Best Data Scientist Award.",
@@ -126,7 +126,7 @@ window.PROJECTS = [
     metricLabel: "inbound pipeline in two quarters",
     tags: ["Competitive Analysis", "GTM Strategy", "Positioning"],
     summary:
-      "Partnered with the Chief Product Officer to diagnose why a product line had stalled — and wrote the playbook to fix it.",
+      "Partnered with the Chief Product Officer to diagnose why a product line had stalled, and wrote the playbook to fix it.",
     context: "An underperforming product line had stopped growing and no one had a clear diagnosis.",
     did: [
       "Partnered with the Chief Product Officer to diagnose the stagnation.",
@@ -199,7 +199,7 @@ window.PROJECTS = [
     metricLabel: "regional ARR, up from $1M",
     tags: ["POCs", "Analytics Dashboards", "Executive Presentations"],
     summary:
-      "Ran enterprise POCs end-to-end — from discovery to board-level findings — and converted them into contracts.",
+      "Ran enterprise POCs end-to-end, from discovery to board-level findings, and converted them into contracts.",
     context: "Enterprise buyers needed proof on their own data before committing.",
     did: [
       "Led requirements discovery for multi-phase POC engagements.",

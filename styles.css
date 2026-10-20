@@ -1,5 +1,5 @@
 /* =========================================================
-   Design tokens — warm paper, forest green, clay
+   Design tokens - warm paper, forest green, clay
    ========================================================= */
 :root {
   --bg: #f5f2eb;
@@ -312,7 +312,7 @@ svg {
 .section__intro { max-width: 340px; color: var(--text-muted); }
 
 /* =========================================================
-   Work — toolbar & grid
+   Work - toolbar & grid
    ========================================================= */
 .toolbar { display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; }
 .chips { display: flex; flex-wrap: wrap; gap: 8px; }
@@ -502,7 +502,7 @@ svg {
   padding: 32px 0;
   border-bottom: 1px solid var(--border);
 }
-/* Career logos — flattened to the page's ink so they sit in the palette */
+/* Career logos - flattened to the page's ink so they sit in the palette */
 .role__logo {
   height: 26px; width: auto; max-width: 150px;
   margin-bottom: 12px;
@@ -512,7 +512,7 @@ svg {
 }
 .role__logo--wide { height: 19px; }
 
-/* Seals keep their own colours — flattening destroys their internal detail.
+/* Seals keep their own colours, flattening destroys their internal detail.
    The tile matches the paper in light mode and becomes a light badge in dark. */
 .role__badge {
   display: inline-flex;
@@ -541,7 +541,7 @@ svg {
 .about__text { grid-column: 2; }
 .toolkit { grid-column: 2; }
 
-/* Portrait panel — photo sits on a palette gradient and fades into it */
+/* Portrait panel - photo sits on a palette gradient and fades into it */
 .portrait {
   grid-row: span 2;
   position: relative;
@@ -692,7 +692,7 @@ svg {
 .modal__block p, .modal__block li { color: var(--text-muted); }
 .modal__block ul li { position: relative; padding-left: 20px; }
 .modal__block ul li + li { margin-top: 8px; }
-.modal__block ul li::before { content: "—"; position: absolute; left: 0; color: var(--text-faint); }
+.modal__block ul li::before { content: "-"; position: absolute; left: 0; color: var(--text-faint); }
 .modal__links { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 32px; }
 
 /* =========================================================

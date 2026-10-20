@@ -72,7 +72,7 @@
 
   grid.innerHTML = projects.map((p) => `
     <a class="card reveal" href="#project/${p.id}" data-id="${p.id}"
-       aria-label="${escapeHTML(p.title)} — view details">
+       aria-label="${escapeHTML(p.title)} - view details">
       <div class="card__cover cover--${p.cover}">
         <div class="cover__top">
           ${logoChip(p)}
