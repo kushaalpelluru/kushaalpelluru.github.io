@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kushaal Pelluru — Consulting mind, building with AI</title>
+  <meta name="description" content="Kushaal Pelluru — former Solutions Consultant turning business problems into AI products. MS Information Systems & AI at the University of Maryland." />
+  <meta property="og:title" content="Kushaal Pelluru — Consulting mind, building with AI" />
+  <meta property="og:description" content="From customer discovery to deployed AI products. Selected work, career, and contact." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0f1412" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#f5f2eb" media="(prefers-color-scheme: light)" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <script>
+    document.documentElement.classList.add("js");
+    try {
+      const t = localStorage.getItem("theme");
+      if (t) document.documentElement.dataset.theme = t;
+    } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#top" class="nav__logo">Kushaal Pelluru</a>
+
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="#work">Work</a>
+        <a href="#approach">Approach</a>
+        <a href="#career">Career</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav__actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle color theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="icon-btn nav__menu" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <div class="container hero__grid">
+        <div class="hero__main">
+          <p class="kicker reveal">Solutions Consultant <span class="arrow">→</span> AI Product Builder</p>
+          <h1 class="hero__title reveal">
+            Consulting mind.<br />
+            Learning to
+            <span class="rotator" aria-hidden="true">
+              <span class="is-active">envision</span>
+              <span>build</span>
+              <span>deploy</span>
+            </span>
+            <span class="sr-only">envision, build and deploy</span><br />
+            AI products.
+          </h1>
+          <p class="hero__lead reveal">
+            I spent two years as a Solutions Consultant turning enterprise client problems into
+            product roadmaps, proofs of concept and go-to-market plans. Now I'm learning to use
+            LLMs to take an idea all the way from <em>the whiteboard to production</em>.
+          </p>
+          <div class="hero__cta reveal">
+            <a href="#work" class="btn btn--primary">
+              See selected work
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a href="#contact" class="btn btn--ghost">Get in touch</a>
+          </div>
+        </div>
+
+        <aside class="now reveal" aria-label="Currently">
+          <p class="now__label"><span class="dot" aria-hidden="true"></span> Now</p>
+          <dl class="now__list">
+            <div><dt>Studying</dt><dd>MS Information Systems &amp; AI, UMD Smith — Dec 2026</dd></div>
+            <div><dt>Building</dt><dd>SeatSense AI, an explainable pricing engine</dd></div>
+            <div><dt>Exploring</dt><dd>Agents, RAG, evals &amp; human-in-the-loop design</dd></div>
+            <div><dt>Open to</dt><dd>AI product &amp; solutions roles</dd></div>
+          </dl>
+        </aside>
+      </div>
+
+      <div class="container">
+        <ul class="proof reveal" aria-label="Highlights">
+          <li><strong>12+</strong><span>enterprise clients across the Middle East &amp; UK</span></li>
+          <li><strong>$1M → $1.2M</strong><span>regional ARR grown through POCs</span></li>
+          <li><strong>4 → 2 wks</strong><span>client evaluation cycle, redesigned</span></li>
+          <li><strong>Best Data Scientist</strong><span>EY Case Competition, 2026</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ WORK ============ -->
+    <section class="section" id="work">
+      <div class="container">
+        <div class="section__head section__head--split reveal">
+          <div>
+            <p class="eyebrow">Selected work</p>
+            <h2 class="section__title">Things I've shaped.</h2>
+          </div>
+          <p class="section__intro">
+            From enterprise strategy to hands-on AI builds. Select any project for the full story.
+          </p>
+        </div>
+
+        <div class="toolbar reveal">
+          <div class="chips" role="group" aria-label="Filter projects">
+            <button class="chip is-active" data-filter="all" aria-pressed="true">All</button>
+            <button class="chip" data-filter="ai" aria-pressed="false">AI &amp; ML</button>
+            <button class="chip" data-filter="strategy" aria-pressed="false">Strategy &amp; GTM</button>
+            <button class="chip" data-filter="analytics" aria-pressed="false">Analytics</button>
+            <button class="chip" data-filter="blockchain" aria-pressed="false">Blockchain</button>
+          </div>
+          <label class="search">
+            <span class="sr-only">Search projects</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+            <input type="search" id="search" placeholder="Search by project, client, or skill" autocomplete="off" />
+          </label>
+        </div>
+        <p class="count" id="count" aria-live="polite"></p>
+
+        <div class="grid" id="grid"></div>
+        <p class="empty" id="empty" hidden>No projects match that search.</p>
+      </div>
+    </section>
+
+    <!-- ============ APPROACH ============ -->
+    <section class="section section--alt" id="approach">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Approach</p>
+          <h2 class="section__title">Consultant's instincts,<br />builder's toolkit.</h2>
+        </div>
+
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step__num">01</span>
+            <h3 class="step__title">Envision</h3>
+            <p class="step__lead">Find the problem worth solving before touching a model.</p>
+            <div class="step__cols">
+              <div>
+                <h4>From consulting</h4>
+                <ul><li>Customer discovery</li><li>Market &amp; competitor research</li><li>Phased roadmaps</li></ul>
+              </div>
+              <div>
+                <h4>With AI</h4>
+                <ul><li>AI product strategy</li><li>Opportunity framing</li><li>PRDs &amp; success metrics</li></ul>
+              </div>
+            </div>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">02</span>
+            <h3 class="step__title">Build</h3>
+            <p class="step__lead">Prototype fast, with the business constraints built in.</p>
+            <div class="step__cols">
+              <div>
+                <h4>From consulting</h4>
+                <ul><li>Requirements gathering</li><li>Solution architecture</li><li>Custom dashboards</li></ul>
+              </div>
+              <div>
+                <h4>With AI</h4>
+                <ul><li>LLMs &amp; AI APIs</li><li>RAG &amp; agents</li><li>AI-assisted Python</li></ul>
+              </div>
+            </div>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">03</span>
+            <h3 class="step__title">Deploy</h3>
+            <p class="step__lead">Ship something people trust and actually adopt.</p>
+            <div class="step__cols">
+              <div>
+                <h4>From consulting</h4>
+                <ul><li>POCs that convert</li><li>Stakeholder buy-in</li><li>Go-to-market</li></ul>
+              </div>
+              <div>
+                <h4>With AI</h4>
+                <ul><li>Evals &amp; guardrails</li><li>Human-in-the-loop</li><li>Responsible AI</li></ul>
+              </div>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ CAREER ============ -->
+    <section class="section" id="career">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Career</p>
+          <h2 class="section__title">Where I've been.</h2>
+        </div>
+
+        <ol class="timeline">
+          <li class="role reveal">
+            <span class="role__date">Expected Dec 2026</span>
+            <div class="role__body">
+              <img class="role__logo" src="assets/logos/maryland-smith.png" alt="" aria-hidden="true" />
+              <h3>University of Maryland, Robert H. Smith School of Business</h3>
+              <p class="role__title">MS, Information Systems &amp; Artificial Intelligence</p>
+              <p class="role__desc">Focus on AI product strategy, digital transformation and business process analysis. Best Data Scientist Award (EY Case Competition, 2026). Terrapin Merit Scholar (2025).</p>
+            </div>
+            <span class="role__place">College Park, MD</span>
+          </li>
+          <li class="role reveal">
+            <span class="role__date">Oct 2025 — Present</span>
+            <div class="role__body">
+              <img class="role__logo" src="assets/logos/maryland-smith.png" alt="" aria-hidden="true" />
+              <h3>Smith Masters Student Association</h3>
+              <p class="role__title">VP, Professional Development</p>
+              <p class="role__desc">Led 9 career-upskilling workshops across consulting, finance and tech (100+ attendees). Brokered a Dingman Center &amp; MTP partnership that helped internship-seeking students land placements.</p>
+            </div>
+            <span class="role__place">College Park, MD</span>
+          </li>
+          <li class="role reveal">
+            <span class="role__date">Feb 2023 — Apr 2025</span>
+            <div class="role__body">
+              <img class="role__logo role__logo--wide" src="assets/logos/facilio.png" alt="" aria-hidden="true" />
+              <h3>Facilio Inc. <span class="muted">· IoT-enabled facilities management SaaS</span></h3>
+              <p class="role__title">Solutions Consultant — Presales, Product Strategy, Market Research &amp; GTM</p>
+              <p class="role__desc">Led discovery, POCs and go-to-market work for enterprise clients across the Middle East and UK. Grew regional ARR from $1M to $1.2M, halved evaluation cycles, and worked directly with the CPO on product-line strategy.</p>
+            </div>
+            <span class="role__place">Chennai · Dubai</span>
+          </li>
+          <li class="role reveal">
+            <span class="role__date">2018 — 2022</span>
+            <div class="role__body">
+              <h3>Anna University</h3>
+              <p class="role__title">B.Eng., Electronics &amp; Communication</p>
+            </div>
+            <span class="role__place">Chennai, India</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section section--alt" id="about">
+      <div class="container about">
+        <figure class="portrait reveal">
+          <picture>
+            <source srcset="assets/portrait.webp 1100w, assets/portrait-sm.webp 550w"
+                    sizes="(max-width: 1080px) 320px, 420px" type="image/webp" />
+            <img src="assets/portrait.webp" alt="Portrait of Kushaal Pelluru" width="1100" height="1447" loading="lazy" decoding="async" />
+          </picture>
+        </figure>
+
+        <div class="about__text">
+          <p class="eyebrow reveal">About</p>
+          <h2 class="section__title reveal">The best AI products start with a good question.</h2>
+          <div class="about__body reveal">
+            <p>
+              As a Solutions Consultant I sat between enterprise clients and the product team,
+              listening for the real problem underneath the RFP. I learned how to translate
+              stakeholder needs into roadmaps, how to design a proof of concept that earns a signature,
+              and how to tell the story to a board.
+            </p>
+            <p>
+              What I've found is that those same skills are exactly what AI products are often missing.
+              So I'm pairing them with hands-on building: LLMs, retrieval, agents and evaluation,
+              always with guardrails and a human in the loop where it matters.
+            </p>
+          </div>
+        </div>
+
+        <div class="toolkit reveal">
+          <div>
+            <h3>Product</h3>
+            <p>Strategy · Roadmapping · Customer discovery · PRDs · Prioritization · Agile · Product analytics · A/B testing</p>
+          </div>
+          <div>
+            <h3>AI</h3>
+            <p>Generative AI · LLMs · RAG · AI agents · Prompt engineering · AI evaluation · Human-in-the-loop · Responsible AI</p>
+          </div>
+          <div>
+            <h3>Data &amp; tech</h3>
+            <p>SQL · Python (AI-assisted) · Power BI · Tableau · Git · REST APIs · AWS (foundational)</p>
+          </div>
+          <div>
+            <h3>Emerging tech</h3>
+            <p>Blockchain architecture · Tokenization · DLT · Private-to-public layer design</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <p class="eyebrow reveal">Contact</p>
+        <h2 class="contact__title reveal">Have a messy problem<br />that could be an <em>AI product</em>?</h2>
+        <p class="contact__lead reveal">I'd love to hear about it. I'm open to AI product and solutions roles, and always up for a good conversation.</p>
+        <div class="contact__actions reveal">
+          <a href="mailto:kushaalpl@gmail.com" class="btn btn--primary btn--large">kushaalpl@gmail.com</a>
+          <button class="btn btn--ghost btn--large copy-email" type="button" data-email="kushaalpl@gmail.com" aria-label="Copy email address">
+            Copy email
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+          </button>
+        </div>
+        <ul class="contact__links reveal">
+          <li><a href="https://www.linkedin.com/in/kushaal-pelluru-575830193" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+          <li><a href="https://github.com/kpdade" target="_blank" rel="noopener">GitHub ↗</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Kushaal Pelluru · College Park, MD</p>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- Project detail dialog -->
+  <dialog class="modal" id="modal" aria-labelledby="modalTitle">
+    <div class="modal__inner" id="modalBody"></div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+# macOS
+.DS_Store
+
+# local editor / tooling config
+.claude/
+
+# parked experiments — not part of the public site
+extras/
+
+# résumé holds personal contact details; add a scrubbed copy when ready
+assets/resume.pdf
